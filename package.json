@@ -8,16 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThisisNirmalJaiswal/JaiKisan.git"
+    "url": "https://github.com/sagar-sonkar2392/jaikisan-.git"
   },
-  "author": "Nirmal Jaiswal",
+  "author": "Sagar Sonkar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThisisNirmalJaiswal/JaiKisan/issues"
+    "url": "https://github.com/sagar-sonkar2392/jaikisan/issues"
   },
-  "homepage": "https://github.com/ThisisNirmalJaiswal/JaiKisan#readme",
+  "homepage": "https://github.com/sagar-sonkar2392/jaikisan#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^6.9.0"
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20",
+    "validator": "^13.9.0"
   }
 }

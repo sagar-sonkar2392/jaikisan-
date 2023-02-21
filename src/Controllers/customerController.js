@@ -93,7 +93,10 @@ const getCustomer = async function(req,res){
 const deleteCustomer = async function(req,res){
     try{
         let Id = req.params.customerId;
-        await customerModel.findByIdAndUpdate(Id, { $set: {isDeleted:true}})
+       const data= await customerModel.findByIdAndUpdate(Id, { $set: {isDeleted:true}})
+       if(data.isDeleted==true){
+        return res.status(404).send({status:false,message:"customer not found"})
+       }
         return res.status(200).send({status:true,message:"customer deleted successfully"})
     }catch(error){
         return res.status(500).send({status:false, message:error.message})
